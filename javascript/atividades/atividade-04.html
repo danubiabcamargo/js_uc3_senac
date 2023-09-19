@@ -1,14 +1,14 @@
-<!--Um usuário tem que digitar a senha para entrar na página, sabendo que a senha correta é swordfish, crie um programa que leia a senha e informe no console se a senha está correta ou incorreta-->
-
+<!--Enunciado: Encontre o Número Correto!
+Desenvolva um script que interaja com o usuário por meio de um prompt, solicitando que ele insira um número entre 1 e 5.
+O script deverá então verificar se o número inserido é igual a 4.
+Se for igual, exiba a mensagem 'Muito bem, [número] é o valor correto' em azul; caso contrário, exiba 'Que pena, [número] não é o valor correto' em vermelho.-->
 
 <script>
-    let senha = prompt('Digite sua senha: ', '');
+    let numero = prompt('Digite um número entre 1 e 5', '');
 
-    if(senha == 'swordfish'){  //variavel e a comparação com texto
-        console.log ('Sua senha está correta');
+    if (numero == '4'){
+        document.write('Muito bem, '+ '<font color=blue>' + numero + '</font>' + ' é o valor correto');
     }else{
-        console.log('Tente novamente!');
+        document.write('Que pena, ' + '<font color=red>' + numero + '</font>' + ' não é o valor correto');
     }
-
 </script>
-

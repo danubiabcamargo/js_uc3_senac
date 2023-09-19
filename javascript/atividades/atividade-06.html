@@ -1,16 +1,21 @@
+<!--Enunciado: Aluno
+Desenvolva um script que interaja com o usuário por meio de prompts, solicitando o nome de um aluno e sua nota. O script avaliará se a nota é maior ou igual a 7 e, com base nessa avaliação, exibirá a mensagem 'Aluno:[nome do aluno] - Nota: [nota] >> APROVADO <<' em azul se o aluno for aprovado, ou 'Aluno:[nome do aluno] - Nota:[nota] >>REPROVADO<<' em vermelho se o aluno for reprovado.-->
+
 
 
 
 <script>
-    let cor = prompt('Digite uma cor em Inglês');
-    let bgColor
+let nome = prompt('Digite seu nome: ', '');
+let nota = prompt('Digite a nota do aluno: ', '');
+const media = "7";
 
-    if (cor == 'yellow'){
-        document.write('<h1> Muito bem, ' +  '<body bgColor=yellow>' + cor + ' ,é uma cor linda!</h1>');
+if (nota >= media) {
+    document.write('Nome: ' + nome  + '<br>' + 'Nota: ' + nota + '<h2> <font color="blue"> >>APROVADO<< </font>' + '<br>');
+} else if (nota <= media){
+    document.write('Nome: ' + nome +  '<br>' +'Nota: ' + nota + '<h2> <font color="red"> >>REPROVADO<< </font>' + '<br>' );
 
-    }else{
-        document.bgColor = cor;
-    }
+    
+}
 
 
 
