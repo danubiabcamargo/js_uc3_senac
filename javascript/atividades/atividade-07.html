@@ -1,0 +1,18 @@
+<!-- Enuncidado: Verificação de idade e autorização
+
+Crie um programa que pede a  idade de um usuário e verifica se ele é maior de 18 anos e se tem autorização  dos pais. Se ambas as condições forem verdadeiras, exiba "Pode entrar", caso contrário, exiba "Não pode entrar!"-->
+
+<script>
+    const idade = prompt('Digite sua idade: ', '');
+    const autorizacao = prompt('Você tem autorização dos pais? (sim ou não)', '');
+
+
+    if(idade > 18 && autorizacao == "sim"){
+        document.write('Idade: ' + idade + '<br>' + '<font color="blue"> Pode entrar</font>');
+
+    }else {
+        document.write('Idade: ' + idade + '<br>' + '<font color="red"> Não pode entrar </font>');
+    }
+
+
+</script>
