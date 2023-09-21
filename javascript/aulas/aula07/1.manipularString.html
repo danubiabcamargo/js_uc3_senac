@@ -1,0 +1,18 @@
+<script>
+    let nome = prompt('Digite seu nome: ','');
+
+    //Alterando o valor para letras maiusculas
+    let nomeMaiusculo = nome.toUpperCase();
+
+    //Alterando o valor para letras minusculas
+    let nomeMinusculo = nome.toLowerCase();
+
+    // Alterando a primeira letra para maiuscula, inicial do numero começa em zero
+    let nomePriMaiusculo = nome.charAt(0).toLocaleUpperCase() + nome.slice(1);
+
+
+    console.log(nome);
+    console.log('Digitado: ' + nomeMaiusculo);
+    console.log('Digitado: ' + nomeMinusculo);
+    console.log('Digitado: ' + nomePriMaiusculo);
+</script>
