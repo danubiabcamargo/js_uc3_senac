@@ -9,8 +9,7 @@ main {
     padding: 20px;
     margin: auto;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba( 11, 37, 89);
-    margin-top: 10%;
+    box-shadow: 5px 5px 5px rgba( 11, 37, 89);    
     font-family: Arial, Helvetica, sans-serif;
 }
 
