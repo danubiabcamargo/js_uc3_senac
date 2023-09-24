@@ -8,13 +8,13 @@ O tipo de triângulo pode ser "equilátero" se todos os lados forem iguais, "is�
 Certifique-se de exibir claramente os valores dos lados e o tipo de triângulo no resultado final.-->
 
 <script>
-  let ladoA = prompt("Digite o valor de lado A: ");
-  let ladoB = prompt("Digite o valor do lado B: ");
-  let baseC = prompt("Digite a medida da base C: ");
+  let lado1 = prompt("Digite o valor de lado A: ");
+  let lado2 = prompt("Digite o valor do lado B: ");
+  let base3 = prompt("Digite a medida da base C: ");
 
-  if (ladoA === ladoB && ladoB === baseC && baseC === ladoA) {
+  if (lado1 === lado2 && lado2 === base3 && base3 === lado1) {
     document.write("Triangulo Equilatero");
-  } else if (ladoA === ladoB || ladoB === baseC || ladoA === baseC) {
+  } else if (lado1 === lado2 || lado3 === base3 || lado1 === base3) {
     document.write("<font color=blue>Triangulo Isóceles</font>");
   } else {
     document.write("Triangulo Escaleno");

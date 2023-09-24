@@ -1,0 +1,33 @@
+<!-- Enunciado: Consulta de Status de Tickets​
+Você está desenvolvendo um sistema de atendimento ao cliente para uma empresa de suporte técnico. O sistema deve receber um número de ticket de suporte e fornecer informações sobre o status desse ticket. Os possíveis status de um ticket são os seguintes:​​
+1-Aberto​
+2-Em andamento​
+3-Resolvido​
+4-Fechado-->
+
+<script>
+  let ticket = prompt("Digite o número do Ticket: ","");
+  let status;
+
+  ticket = parseInt(ticket);
+  switch(ticket){
+    case 1:
+      status = "Em aberto";
+      break;
+      case 2:
+      status = "Em andamento";
+      break;
+      case 3:
+      status = "Resolvido";
+      break;
+      case 4:
+      status = "Fechado";
+      break;
+      default:
+        status ="Ticket não existe"
+  }
+
+  document.write('Ticket: ' + ticket);
+    document.write('<br> Status: ' + status);
+
+</script>
