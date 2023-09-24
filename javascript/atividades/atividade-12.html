@@ -1,0 +1,31 @@
+<!-- Enunciado: Boletim escolar​
+
+Crie um programa que leia o nome do aluno e 4 notas, no final exibir o nome do aluno as quatro notas, a média e se a média for maior ou igual a 7,0 aprovado caso contrário reprovado.-->
+
+<script>
+  let nome = prompt('Digite o nome do aluno(a): ')
+  let nota1 = parseFloat(prompt('Digite a Primeira nota:  \n (1 ate 10)'));
+  let nota2 = parseFloat(prompt('Digite a Segunda nota:  \n (1 ate 10)'));
+  let nota3 = parseFloat(prompt('Digite a Terceira nota:  \n (1 ate 10)'));
+  let nota4 = parseFloat(prompt('Digite a Quarta nota:  \n (1 ate 10)'));
+  let media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+  document.write('<h1>Boletim Escolar</h1>');
+  document.write('<p>Aluno(a): ' + nome + '</p>');
+  document.write('<p>Primeira nota: ' + nota1 + '</p>');
+  document.write('<p>Segunda nota: ' + nota2 + '</p>');
+  document.write('<p>Terceira nota: ' + nota3 + '</p>');
+  document.write('<p>Quarta nota: ' + nota4 + '</p>');
+  document.write('<p>Média: ' + media + '</p>');
+
+  if (nota1 < 1 ||  nota1 > 10, nota2 < 1 || nota2 > 10, nota3 < 1 ||  nota3 > 10, nota4 < 1 ||  nota4 > 10
+  ){
+
+  } else if(media >= 7.0) {
+    document.write('<font color="blue"> APROVADO </font>');
+
+  }else{
+    document.write('<font color="red"> REPROVADO </font>');
+  }
+  
+</script>

@@ -1,0 +1,19 @@
+<!-- Enunciado: Valor de venda​
+Crie um programa que receba o preço de custo de um produto e mostre o valor de venda. Sabe-se que o preço de custo receberá um  acréscimo de acordo com um percentual informado pelo usuário.​-->
+
+<script>
+  let precoCusto = parseFloat(prompt("Digite o preço de custo do produto: "));
+  let percentualAcrescimo = parseFloat(
+    prompt("Digite o percentual de acréscimo (em %): ")
+  );
+  let acrescimo;
+  let valorVenda;
+
+  if (percentualAcrescimo < 0) {
+            
+        } else {   
+            acrescimo = (percentualAcrescimo / 100) * precoCusto;
+            valorVenda = precoCusto + acrescimo;
+            document.write("O valor de venda é: " + valorVenda);
+        }
+</script>
