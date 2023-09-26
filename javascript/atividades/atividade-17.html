@@ -8,23 +8,28 @@
 <!--Enunciado: Crie um script usando dois exemplos de funções no mesmo arquivo, VOID e RETURN-->
 
 <script>
-    function imprimirNome() {
-        console.log('Danubia');
+    function imprimirSalario() {
+        document.write('<h1>Reajuste salarial</h1><hr><br><br>');
 
     }
-    imprimirNome();
+    imprimirSalario();
 
 
 
     function salario() {
-        return salarioAj / reajuste;
 
+        salarioAj = prompt('Digite salario R$: ', '');
+        reajuste = prompt('Reajuste: ', '');
+
+        salarioAj = parseFloat(salarioAj);
+        reajuste = parseFloat (reajuste);
+
+        let resultado = reajuste * 100 / salarioAj ;
+        return
+        document.write(`O reajuste salarial é: <strong>${resultado}</strong>%`);
     }
-    salarioAj = parseFloat(prompt('Digite salario R$: ', ''));
-    reajuste = parseFloat(prompt('Reajuste: ', ''));
 
-    let resultado = salario (salarioAj,reajuste) ;
-    document.write(`O reajuste salarial é: <strong>${resultado}</strong>%` );
+    salario();
 
 
 </script>
