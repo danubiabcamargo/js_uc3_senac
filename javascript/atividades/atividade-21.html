@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu exemplo de callback</title>
+</head>
+
+<body>
+
+    <button id="botao1" onclick="tabelaBrasileiro()"> Tabela do Brasileirão </button>
+    <button id="botao2" onclick="palmeiras()"> Palmeiras </button>
+
+
+
+    <script>
+
+        function tabelaBrasileiro(){
+            document.bgColor="gray";
+            document.write('<img src="imagens/tabela01.png">')
+        }
+
+        function palmeiras(){            
+            document.bgColor="green";
+            alert('Você deseja ser direcionado para esse site?');                 
+            document.write('<a href="https://www.palmeiras.com.br/">Site - Sociedade Esportiva Palmeiras </a>' +'<br>');
+            document.write('<a href="https://www.google.com/search?q=tabela+brasileirao&rlz=1C1ONGR_pt-PTBR1069BR1069&oq=tabela+brasi&aqs=chrome.0.0i3j69i57j0i3l2j0i131i433i512j0i3l3j0i512l2.2783j0j4&sourceid=chrome&ie=UTF-8#sie=t;/m/019lwb;2;;mt;fp;1;;;"> Verificar Tabela e Noticias</a>');
+            document.body.style.backgroundImage = "url('https://cdn2.tfx.company/images/clickwallpapers-time-brasileiro-palmeiras-futebol_img1.jpg')";
+
+        }
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

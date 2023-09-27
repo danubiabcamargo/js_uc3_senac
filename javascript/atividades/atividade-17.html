@@ -9,7 +9,7 @@
 
 <script>
     function imprimirSalario() {
-        document.write('<h1>Reajuste salarial</h1><hr><br><br>');
+        document.write('Reajuste salarial<hr><br><br>');
 
     }
     imprimirSalario();
@@ -25,8 +25,7 @@
         reajuste = parseFloat (reajuste);
 
         let resultado = reajuste * 100 / salarioAj ;
-        return
-        document.write(`O reajuste salarial é: <strong>${resultado}</strong>%`);
+        return document.write(`O reajuste salarial é: <strong>${resultado}</strong>%`);
     }
 
     salario();

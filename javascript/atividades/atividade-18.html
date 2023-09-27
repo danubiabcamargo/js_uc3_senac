@@ -1,0 +1,29 @@
+<style>
+    body {
+        font: normal 18pt Arial;
+        background-color: gray;
+        color: white;
+    }
+</style>
+
+<h2>Enunciado: Função Média </h2>
+<p>  Em excel temos uma função muito utilizada chamada média, que tem como objetivo a soma dos valores das células selecionadas dividido pela quantidade de valores retornando assim o valor médio. Reproduza esse conceito criando uma função em javascript. </p><hr>
+
+<script>
+    function funcaoMedia(nt1,nt2,nt3,nt4){
+        nt1 = parseFloat(prompt('Digite a primeira nota: ',' '));
+        nt2 = parseFloat(prompt('Digite a segunda nota: ',' '));
+        nt3 = parseFloat(prompt('Digite a terceira nota: ',' '));
+        nt4 = parseFloat(prompt('Digite a quarta nota: ',' '));                
+        document.write(`Nota 1 ${nt1} <br>` );
+        document.write(`Nota 2 ${nt2} <br>`);
+        document.write(`Nota 3 ${nt3} <br>`);
+        document.write(`Nota 4 ${nt4} <br>`);
+    
+        let media = (nt1+nt2+nt3+nt4)/4;
+        return document.write(`Média:  <strong> ${media} </strong>`);
+    }
+
+funcaoMedia();
+
+</script>

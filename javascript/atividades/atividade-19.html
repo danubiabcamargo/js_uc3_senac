@@ -1,0 +1,32 @@
+<style>
+    body {
+        font: normal 18pt Arial;
+        background-color: gray;
+        color: white;
+    }
+</style>
+
+<h2>Enunciado: Área de um terreno </h2>
+<p>  Crie um script que calcule a área de um terreno retangular e exiba os valores de largura, comprimento e área do terreno na página HTML.</p>
+<p>O usuário deve fornecer os valores de largura e comprimento do terreno. O script deve então calcular a área multiplicando esses dois valores e exibir todos os resultados na página</p><hr>
+
+<script>
+    function pedreiro (largura,comprimento){
+        largura = parseFloat(prompt('Digite a largura do terreno: ',' '));
+        comprimento = parseFloat(prompt('Digite o comprimento do terreno: ',' '));
+
+        document.write(`Largura do terreno: ${largura}`);
+        document.write(`Comprimento do terreno: ${comprimento}`);
+
+        let terreno = (largura*comprimento);
+        return document.write(`Terreno:  <strong> ${pedreiro} </strong>`);
+
+
+
+    }
+
+pedreiro();
+
+
+
+</script>
