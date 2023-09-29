@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiência Interativa com Funções de Callback em JavaScript</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+            background-color: gray;
+            color: white;
+        }
+
+        #radio {
+            background-color: rgb(119, 62, 62);
+            width: 250px;
+            margin: auto;
+            border-radius: 5px;
+
+        }
+
+        #soma {
+            text-align: justify;
+        }
+
+        section {
+            width: 500px;
+            background-color: rgb(54, 131, 199);
+            border-radius: 20px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #res {
+            padding: 10px;
+            background-color: white;
+            color: black;
+            border-radius: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 19px;
+        }
+
+
+        input {
+            border-radius: 10px;
+            border: none;
+            padding: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Enunciado: Calculadora Simples </h2>
+        <p> Crie um programa que leia dois números inteiros e qual operação deseja fazer com os números (soma,
+            subtração,
+            multiplicação ou divisão) No final exibir os números digitados, a operação escolhida e o resultado</p>
+    </header>
+    <hr>
+    <section>
+        <h1>Calculuadora Simples</h1>
+        <p> Escolha sua operação: </p>
+
+        <div id="radio">
+            <input type="radio" name="unicaEscolha" id="soma"> Soma </input> </br>
+            <input type="radio" name="unicaEscolha" id="subtracao"> Subtração </input> </br>
+            <input type="radio" name="unicaEscolha" id="multiplicacao"> Multiplicação </input></br>
+            <input type="radio" name="unicaEscolha" id="divisao"> Divisão </input> </br>
+        </div>
+
+        <div>
+            <p>Primeiro valor: <input type="text" value="" id="primeiroValor" onclick="valores()"></p>
+            <p>Segundo valor: <input type="text" value="" id="segundoValor" onclick="valores()"></p>
+            <input type="button" value="Resultado" id="res"> </br>
+        </div>
+    </section>
+    
+    <script>
+        function valores(primeiroValor, segundoValor) {
+            primeiroValor = parseInt(prompt('Digite o Primeiro Valor: ', ' '));
+            segundoValor = parseInt(prompt('Digite o Segundo Valor: ', ' '));
+            //return document.write(`Primeiro valor: ${primeiroValor} || Segundo valor: ${segundoValor}`);
+        }
+        valor()
+
+
+
+        function soma() {
+            let soma = (primeiroValor + segundoValor);
+
+
+        }
+
+        function subtracao() {
+            let sub = (primeiroValor - segundoValor);
+        }
+
+        function multiplicacao() {
+            let mult = (primeiroValor * segundoValor);
+        }
+
+        function divisao() {
+            let div = (primeiroValor / segundoValor);
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

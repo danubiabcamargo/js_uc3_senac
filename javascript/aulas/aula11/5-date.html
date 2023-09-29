@@ -1,0 +1,21 @@
+<p>  new Date() faz com que um objeto de data seja criado e atribuido a uma variavel</p>
+<style>
+    body {
+        font: normal 18pt Arial;
+        background-color: rgb(202, 202, 202);
+        color: white;
+    }
+</style>
+
+
+<script>
+    document.write('<br>');
+    // faz com que um objeto de data seja criado e atribuido a uma variavel
+    let data = new Date();
+    document.write(`Dia da semana ${data.getDay()} <br>`);
+    document.write(`Dia do mês ${data.getDate()} <br>`);
+    document.write(`Mês ${data.getMonth()} <br>`);
+    document.write(`Mês ${data.getMonth() +1 } <br>`);
+    document.write(`Ano ${data.getFullYear()} <br>`);
+    
+</script>
