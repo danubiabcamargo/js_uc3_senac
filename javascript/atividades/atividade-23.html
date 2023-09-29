@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experiência Interativa com Funções de Callback em JavaScript</title>
+    <title>Calculadora Simples</title>
     <style>
         body {
             font: normal 18pt Arial;
@@ -16,13 +16,12 @@
             background-color: rgb(119, 62, 62);
             width: 250px;
             margin: auto;
-            border-radius: 5px;
-
+            border-radius: 5px;;
         }
 
         #soma {
             text-align: justify;
-        }
+                }
 
         section {
             width: 500px;
@@ -65,27 +64,36 @@
         <h1>Calculuadora Simples</h1>
         <p> Escolha sua operação: </p>
 
-        <div id="radio">
-            <input type="radio" name="unicaEscolha" id="soma"> Soma </input> </br>
-            <input type="radio" name="unicaEscolha" id="subtracao"> Subtração </input> </br>
-            <input type="radio" name="unicaEscolha" id="multiplicacao"> Multiplicação </input></br>
-            <input type="radio" name="unicaEscolha" id="divisao"> Divisão </input> </br>
+        <div>
+          <p>Primeiro valor: <input type="number" id="primeiroValor"/></p>
+          <p>Segundo valor: <input type="number" id="segundoValor"></p>         
         </div>
 
         <div>
-            <p>Primeiro valor: <input type="number" value="" id="primeiroValor" onclick="valores()"></p>
-            <p>Segundo valor: <input type="number" value="" id="segundoValor" onclick="valores()"></p>
-            <input type="button" value="Resultado" id="res"> </br>
+            <input type="radio" name="unica" onclick="somar()"> Soma </input> </br>
+            <input type="radio" name="unica" id="subtracao"> Subtração </input> </br>
+            <input type="radio" name="unica" id="multiplicacao"> Multiplicação </input></br>
+            <input type="radio" name="unica" id="divisao"> Divisão </input> </br>
         </div>
+
+       <!--<input type="button" value="Resultado" id="res"> </br> --> 
+
+       O Resultado é <span></span>
+
     </section>
     
     <script>
-        function valores(primeiroValor, segundoValor) {
-            primeiroValor = parseInt(prompt('Digite o Primeiro Valor: ', ' '));
-            segundoValor = parseInt(prompt('Digite o Segundo Valor: ', ' '));
-            //return document.write(`Primeiro valor: ${primeiroValor} || Segundo valor: ${segundoValor}`);
+      let primeiroValor = document.querySelector('#primeiroValor');
+      let segundoValor = document.querySelector('#segundoValor');
+      let resultado = document.querySelector('span');
+
+        function somar(){ 
+          resultado.innerHTML = parseInt(primeiroValor.value) + parseInt(segundoValor.value);
+
+
         }
-        valor()
+        
+    
 
 
 
@@ -114,3 +122,5 @@
 </body>
 
 </html>
+
+https://www.youtube.com/watch?v=5d_mskVAxeU
