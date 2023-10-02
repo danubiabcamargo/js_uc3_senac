@@ -12,18 +12,23 @@
 
 <script>
     function pedreiro (largura,comprimento){
+        return largura * comprimento;
+    };
         largura = parseFloat(prompt('Digite a largura do terreno: ',' '));
         comprimento = parseFloat(prompt('Digite o comprimento do terreno: ',' '));
 
-        document.write(`Largura do terreno: ${largura}`);
-        document.write(`Comprimento do terreno: ${comprimento}`);
+        let total = pedreiro (largura,comprimento);
 
-        let terreno = (largura*comprimento);
-        return document.write(`Terreno:  <strong> ${pedreiro} </strong>`);
+        document.write(`Largura do terreno: ${largura} metros <br>`);
+        document.write(`Comprimento do terreno: ${comprimento} metros <br>`);
+        document.write(`Área do terreno: ${total} metros quadrados`);
+
+        
+ 
 
 
 
-    }
+    
 
 pedreiro();
 
