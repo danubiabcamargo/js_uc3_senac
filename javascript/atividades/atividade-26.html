@@ -1,74 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Calculadora Simples 03</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>Calculadora Simples 03</h1>
 
-    <!--Campo de entrada para n1 e n2-->
-    <input type="text" id="n1" placeholder="Primeiro Valor"> <br>
-    <input type="text" id="n2" placeholder="Segundo Valor"> <br><br>
+    <!-- Campo de entrada para n1 e n2 -->
+    <input type="text" id="n1" placeholder="Primeiro Valor"/> <br/>
+    <input type="text" id="n2" placeholder="Segundo Valor"/> <br/><br/>
 
-    <!--Botões de Operação-->
+    <!-- Botões de Operação -->
     <button onclick="calcular('+')">+</button>
     <button onclick="calcular('-')">-</button>
     <button onclick="calcular('*')">*</button>
     <button onclick="calcular('/')">/</button>
-    <br><br>
+    <br /><br />
 
-    <!--Resultado-->
-    <input type="text" id="resultado" placeholder="Resultado">
+    <!-- Resultado -->
+    <input type="text" id="resultado" placeholder="Resultado" />
 
     <script>
-        //Função para calcular a operação selecionada
-        function calcular(operacao) {
-            //Obter os valores de n1 e n2 dos campos de texto
-            let num1 = parseFloat(document.getElementById("numero1").value);
-            let num2 = parseFloat(document.getElementById("numero2").value);
+      // Função para calcular a operação selecionada
+      function calcular(operacao) {
+        // Obter os valores de n1 e n2 dos campos de texto
+        let num1 = parseFloat(document.getElementById('n1').value)
+        let num2 = parseFloat(document.getElementById('n2').value)
 
-            //Verificar se os valores são válidos (números)
-            if (parseFloat(num1) && parseFloat(num2)) {
-                let resultado;            
+        // Verificar se os valores são válidos (números)
+        if (Number(num1) && Number(num2)) {
+          let resultado
 
-                //Realizar operação com base na escolha
-                switch (operacao) {
-                    case '+':
-                        resultado = num1 + num2;
-                        break;
-                    case '-':
-                        resultado = num1 - num2;
-                        break;
-                    case '*':
-                        resultado = num1 * num2;
-                        break;
-                    case '/':
-                        if (num2 !== 0) {
-                            resultado = num1 / num2;
-                        } else {
-                            resultado = "Divisão por zero!";
-                        }
-                        break;
-                    default:
-                        resultado = 'Operação Inválida';
-                }            
+          // Realizar operação com base na escolha
+          switch (operacao) {
+            case '+':
+              resultado = num1 + num2
+              break
+            case '-':
+              resultado = num1 - num2
+              break
+            case '*':
+              resultado = num1 * num2
+              break
+            case '/':
+              if (num2 !== 0) {
+                resultado = num1 / num2
+              } else {
+                resultado = 'Divisão por zero!'
+              }
+              break
+            default:
+              resultado = 'Operação Inválida'
+          }
 
-            //Exibir  o resultado na caixa de texto
-            document.getElementById("resultado").value = resultado;
-
-        } else{
-            //Se um dos valores não for válido, exibir uma mensagem de erro
-            document.getElementById("resultado").value = "Entrada Inválida";
+          // Exibir o resultado na caixa de texto
+          document.getElementById('resultado').value = resultado
+        } else {
+          // Se um dos valores não for válido, exibir uma mensagem de erro
+          document.getElementById('resultado').value = 'Entrada Inválida'
         }
-        }
-    
+      }
     </script>
-
-
-</body>
-
+  </body>
 </html>
