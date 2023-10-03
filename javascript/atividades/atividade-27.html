@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font: normal 14pt Arial;
+
+        }
+        div#circ1{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: green;
+        }
+
+        div#circ2{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: rgb(89, 11, 161);
+        }
+        div#circ3{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: rgb(8, 148, 212);
+        }
+        div#circ3,h2{
+            color: red;
+            
+        }
+
+
+
+        div#circ4{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: rgb(194, 29, 194);
+        }
+        div#circ5{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: rgb(199, 196, 20);
+        }
+
+        #container{
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+
+
+
+
+</head>
+<body>
+    <h1>Atividade 5 elementos - EU</h1>
+
+<script>
+    function circulo(){
+        document.getElementById('circ1').innerHTML='X'
+    }
+
+        
+        
+</script>
+
+<!-- <div  ondblclick="this.style.backgroundColor = 'white'" class="area"> <font color="red">X</font></div> -->
+
+<div id="container">
+    <div onclick="circulo()" id="circ1">
+        <p>X</p>
+    </div>
+    <div onclick="circulo()" id="circ2">
+        <p>X</p></div>
+    <div ondbclick="circPremiado()" id="circ3">
+       <h2>Premiado</h2> 
+    </div>
+    <div onclick="circulo()" id="circ4">
+        <p>X</p></div>
+    <div onclick="circulo()" id="circ5">
+        <p>X</p></div>
+
+
+
+</div>
+</body>
+</html>

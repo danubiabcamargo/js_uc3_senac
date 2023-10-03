@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onkeydown</title>
+</head>
+<body>
+    <h2>Exemplo Evento Onkeydown</h2>
+
+    <script>
+        //Este script conta quantas teclas você  pressionou
+var contador = 5000;
+
+document.onkeydown = function(){
+    contador++;
+    console.log("Teclas pressionadas: " + contador);
+};
+        
+
+
+    </script>
+    
+</body>
+</html>
