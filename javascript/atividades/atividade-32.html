@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificando Classe</title>
+</head>
+<body>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        button{
+            width: 100px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            border-radius: 10%;
+            font-weight: 750;
+        }
+
+        button:hover{
+            background-color: rgb(253, 253, 253);
+            color: black;
+        }
+        .estilo1{
+            background-color: yellow;
+            color: black;
+            font-size: 20px;
+            padding-left: 5px;
+        }
+
+        .estilo2{
+            width: 600px;
+            height: 300px;
+            background-color: red;
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            padding: 10px;
+        }
+
+    </style>
+
+    <script>
+        function modificarClasse(){
+            document.getElementById('texto').className = 'estilo2';
+        }
+        function modificarClasse2(){
+            document.getElementById('texto').className = 'estilo1';
+        }       
+    </script>
+
+    <div id="texto" class="estilo1">
+        <h2>Modificando Classe</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, dicta harum! Iste, placeat! Aliquid cum et veritatis ipsa quo minus, accusamus hic nobis quisquam perspiciatis cumque ratione. Enim, repellat maiores.</p>
+    </div>
+    <hr>
+
+    <button type="button" onclick="modificarClasse()">Modificar Classe</button>
+    <button type="button" onclick="modificarClasse2()">Modificar Classe</button>
+</body>
+</html>

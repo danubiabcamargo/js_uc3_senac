@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM id</title>
+
+    <style>
+        body {
+            font: normal 14pt Arial;
+
+        }
+    </style>
+</head>
+<body>
+    
+<h2>DOM - </h2>
+<p>Selecionando elementos da página por <strong>id</strong></p>
+
+<input type="text" placeholder="Digite seu nome: " id="nome_usuario" class="campo_texto" name="nome">
+
+<script>
+    elementoPorId = document.getElementById('nome_usuario').placeholder;  //.placeholder para pegar o conteudo
+    console.log(elementoPorId);
+</script>
+</body>
+</html>
+
+
