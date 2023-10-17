@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada Loop 1 ao 10</title>
+    <style>
+        body {
+            font: normal 14pt Arial;
+
+        }
+        </style>
+</head>
+<body>
+
+    <h1>Tabuada Loop 1 ao 10</h1>
+    <h2>Horizontal <strong>Y</strong></h2>
+    <h2>Vertical <strong>X</strong></h2>
+
+    <p> document.write(y + ' x ' + x + ' = ' + (y*x) + '&lt;br&gt;'); </p>
+
+    <script>
+        for(y = 1; y<= 10; y++){  /*y para em 10*/
+            for(x=1; x <= 15; x++){  /*x ele para de contar no 15*/
+                document.write(y + ' x ' + x + ' = ' + (y*x) + '<br>');
+            }
+            document.write('<hr>');
+        }
+    </script>
+    
+</body>
+</html>

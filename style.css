@@ -6,7 +6,7 @@ body {
 }
 
 main {
-    background-color: rgba(255, 255, 255, 0.664);
+    background-color: rgba(255, 255, 255, 0.507);
     width: 800px;
     padding: 20px;
     margin: auto;
@@ -37,27 +37,20 @@ main {
 }
 
 h2 {
-    color: #0a0a0a;
+    color: #ffffff;
+    
  
 }
 
 li{
-    color: rgb(240, 235, 235);
+    color: rgb(5, 122, 34);
     list-style-type: none;
+    padding: 10px;
+    font-weight: 700;
+    
 }
 
- li:hover{
-    background-color: rgba(0, 0, 0, 0.822);
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 25px;
-    margin-left: 20px;
-    text-align: center;
-    cursor: pointer;
-    box-shadow: 10px 10px 10px rgba(45, 180, 4, 0.493);
-    text-transform: uppercase;
-    transition-delay: 0.1s;
-}
+
 
 aside {
     display: block; 
@@ -77,9 +70,18 @@ aside img {
     margin-right: 10px;
 }
 
-a, a:visited {
+a {
     color: rgb(5, 122, 34);
     font-weight: bolder;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px rgba(45, 180, 4, 0.493);
+    text-decoration: none;
+    line-height: 30px;
+    
+    
 }
 
 a:hover {
